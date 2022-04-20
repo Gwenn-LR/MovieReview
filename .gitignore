@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# MovieReview
+*.sqlite
+movieReview_app/data/*.png

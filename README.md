@@ -78,10 +78,10 @@ Le bon fonctionnement de l'application demandée.
 # Modalités d'évaluation
 
 Un rapport sur le projet réalisé :
-•	Description des données
-•	Présentation des différentes étapes du code
-•	Résultats
-•	Conclusion (avantages et inconvénients, recommandations…)
+- [x] Description des données
+- [ ] Présentation des différentes étapes du code
+- [ ] Résultats
+- [ ] Conclusion (avantages et inconvénients, recommandations…)
 Revue de code avec le formateur.
 
 
@@ -94,7 +94,7 @@ Un dépôt GitHub avec :
 
 
 # Travail à réaliser
-- [ ] Étape 1
+- [x] Étape 1
 - [ ] Étape 2
 - [ ] Étape 3
 - [ ] Étape 4
