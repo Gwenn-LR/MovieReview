@@ -7,6 +7,9 @@ APP_PATH = "movieReview_app"
 
 #TODO: Enregistrer le vectorizer dans le pipeline
 def prediction():
+    '''Indique la prédiction de l'opinion d'un utilisateur à partir d'un commentaire saisi
+    '''
+    
     model = joblib.load(f"{APP_PATH}/models/20220423-2112_StandardScaler_0.95.z")
     vectorizer = joblib.load(f"{APP_PATH}/models/20220423-2112_CountVectorizer.z")
 

@@ -21,9 +21,7 @@ def get_html_doc(url_page:String):
 def get_elements(doc, tag, cls, *args):
     '''Crée une liste d'éléments repérés par la balise et la classe de ceux-ci dans un document.
     '''
-    # if args:
-    #     elements = doc.xpath(f"//{tag}[@class=\"{cls}\"]/{args[0]}")
-    # else:
+    
     elements = doc.xpath(f"//{tag}[@class=\"{cls}\"]")
 
     for i, element in enumerate(elements):

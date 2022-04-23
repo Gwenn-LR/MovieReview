@@ -66,7 +66,6 @@ if __name__ == "__main__":
 
     # Chargement des données
     print("Chargement des données csv.")
-    # data = pd.DataFrame()
     data =pd.read_csv(f"{APP_PATH}/data/data_preprocessed.zip", keep_default_na=False)
     data.index = [i for i in range(len(data.index))]
     print("Données chargées !")
@@ -114,7 +113,7 @@ if __name__ == "__main__":
     print("Informations concernant le modèle :")
     etapes = [str(pipe.get_params()['steps'][i][1]).split('(')[0] for i in range(len(pipe.get_params()['steps']))]
     print(f"\
-        Etapes : \n\
+        Étapes : \n\
             {etapes[0]}\n\
             {etapes[1]}\n\
         Critère d'évaluation : {pipe.get_params()['classifier__scoring'].upper()}\n\r\

@@ -64,7 +64,8 @@ Nos données sont prêtes, nous allons pour ce premier exercice utiliser un algo
 ## Étape 6 : Analyse des résultats
 
 Calculer l’accuracy et la matrice de confusion sur les données de test. Une fois que les résultats sont satisfaisants, vous pourrez maintenant tester sur des commentaires que vous et vos collègues ferons afin de vérifier le bon fonctionnement du programme.
-Modalités pédagogiques
+
+# Modalités pédagogiques
 
 Le deadline pour rendre ce travail est fixé pour le 25 avril. Le projet est réalisé en groupe de 2-3 personnes.
 
@@ -81,7 +82,7 @@ Un rapport sur le projet réalisé :
 - [x] Description des données
 - [x] Présentation des différentes étapes du code
 - [x] Résultats
-- [ ] Conclusion (avantages et inconvénients, recommandations…)
+- [x] Conclusion (avantages et inconvénients, recommandations…)
 Revue de code avec le formateur.
 
 
@@ -89,8 +90,8 @@ Revue de code avec le formateur.
 
 Un dépôt GitHub avec : 
 - [x] Un Notebook bien structuré/organisé qui réalise les différentes étapes de ce projet. 
-- [ ] Un rapport sur le projet réalisé
-- [ ] Un Readme.md pour mettre en avant votre projet.
+- [x] Un rapport sur le projet réalisé
+- [x] Un Readme.md pour mettre en avant votre projet.
 
 
 # Travail à réaliser
@@ -101,4 +102,4 @@ Un dépôt GitHub avec :
 - [x] Étape 5
 - [x] Étape 6
 - [x] Notebook récapitulatif
-- [ ] Rapport du projet
+- [x] Rapport du projet

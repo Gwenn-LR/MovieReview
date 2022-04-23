@@ -44,9 +44,6 @@ def tokenization(data_to_tokenize):
     for index, row in data.iterrows():
         row.comment = " ".join(sp_pattern(row.comment)).lower()
         tokens.append(" ".join(filtre_stopfr(nltk.word_tokenize(row.comment, language="french"))))
-        # token = " ".join(filtre_stopfr(nltk.word_tokenize(row.comment, language="french")))
-        # Ajout aux données de la colonne associée aux tokens
-        # data.loc[index, "tokens"] = token
 
     data = data.assign(tokens = tokens)
     
@@ -90,6 +87,7 @@ def get_words_freq(data, num_words_max = MAX_WORDS):
     for tokens in data.tokens:
         tokens_freq = nltk.FreqDist(tokens)
         print(tokens_freq.most_common(num_words_max))
+
 
 #TODO: Séparer en 2 fonctions
 def wordcloud(data, num_words_max = MAX_WORDS):
@@ -143,9 +141,6 @@ def vectorizer(column, stop_words=STOPWORDS):
 
     # Appel du constructeur CountVectorizer
     vectorizer = CountVectorizer(stop_words = stop_words)
-
-    # Extraction des commentaires
-    # comments_preprocessed = [" ".join(column.iloc[i]) for i in range(len(column))]
 
     # Entraînement du sac de mot
     vectorizer.fit(column)
@@ -202,14 +197,6 @@ if __name__ == "__main__":
 
     # Enregistrement sous forme de nuages de mots en fonction de l'opinion et du nombre de mots et extraction des mots communs en mots vides
     wordcloud_stopwords = wordcloud(data, MAX_WORDS)
-
-    # Entraînement du sac de mot
-    # vectorizer = vectorizzer(data.tokens)
-
-    # # Vectorisation
-    # one_hot = vectorizer.transform(data.tokens)
-
-    # data.append(one_hot)
 
     # Réindexation après opérations
     data.reset_index(drop=True, inplace=True)
