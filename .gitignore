@@ -130,4 +130,3 @@ dmypy.json
 
 # MovieReview
 *.sqlite
-movieReview_app/data/*.png
