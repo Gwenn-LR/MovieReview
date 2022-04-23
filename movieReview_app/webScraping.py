@@ -27,6 +27,9 @@ def get_elements(doc, tag, cls, *args):
     elements = doc.xpath(f"//{tag}[@class=\"{cls}\"]")
 
     for i, element in enumerate(elements):
+        # Ajout de saut de ligne autour des balises <br> non fermées
+        for br in element.xpath("br"): br.tail = "\n" + br.tail if br.tail else "\n"
+        
         elements[i] = element.text_content().strip()
     
     return elements
