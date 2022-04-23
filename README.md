@@ -79,8 +79,8 @@ Le bon fonctionnement de l'application demandée.
 
 Un rapport sur le projet réalisé :
 - [x] Description des données
-- [ ] Présentation des différentes étapes du code
-- [ ] Résultats
+- [x] Présentation des différentes étapes du code
+- [x] Résultats
 - [ ] Conclusion (avantages et inconvénients, recommandations…)
 Revue de code avec le formateur.
 
@@ -88,7 +88,7 @@ Revue de code avec le formateur.
 # Livrables
 
 Un dépôt GitHub avec : 
-- [ ] Un Notebook bien structuré/organisé qui réalise les différentes étapes de ce projet. 
+- [x] Un Notebook bien structuré/organisé qui réalise les différentes étapes de ce projet. 
 - [ ] Un rapport sur le projet réalisé
 - [ ] Un Readme.md pour mettre en avant votre projet.
 
@@ -98,7 +98,7 @@ Un dépôt GitHub avec :
 - [x] Étape 2
 - [x] Étape 3
 - [x] Étape 4
-- [ ] Étape 5
-- [ ] Étape 6
-- [ ] Notebook récapitulatif
+- [x] Étape 5
+- [x] Étape 6
+- [x] Notebook récapitulatif
 - [ ] Rapport du projet
