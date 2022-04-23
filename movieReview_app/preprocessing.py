@@ -10,8 +10,8 @@ from wordcloud import STOPWORDS, WordCloud
 APP_PATH = "movieReview_app"
 STOPWORDS_FR = set(stopwords.words("french"))
 
-# STOPWORDS_CUSTOM = {}
-STOPWORDS_CUSTOM = {"di", "caprio", "effets", "spéciaux", "marion", "cotillard"}
+STOPWORDS_CUSTOM = {}
+# STOPWORDS_CUSTOM = {"di", "caprio", "effets", "spéciaux", "marion", "cotillard"}
 # STOPWORDS_CUSTOM = {"a", "si", "c'est", "j'ai", "qu'il", "ça", "comme", "film", "car", "tout", "plu", "marion cotillard", "tou", "ici", "di caprio", "effets spéciaux", "alors", "leonardo", "di", "caprio", "marion", "cotillard", "parce", "effets", "spéciaux", "depuis", "pu", "toutes", "shutter", "island", "dicaprio", "tous", "donc", "avoir", "assez", "aprè", "cela", "ca", "entre", "déjà", "christopher", "toujour", "toujours", "après", "autres", "début", "final"}
 
 STOPWORDS = STOPWORDS_FR.union(STOPWORDS_CUSTOM)
@@ -82,7 +82,7 @@ def calculate_opinion(data):
     return data
 
 
-def get_words_freq(data, num_words_max):
+def get_words_freq(data, num_words_max = MAX_WORDS):
     '''Affiche la fréquence des mots utilisés dans chaque commentaire
     '''
 
@@ -92,7 +92,7 @@ def get_words_freq(data, num_words_max):
         print(tokens_freq.most_common(num_words_max))
 
 #TODO: Séparer en 2 fonctions
-def wordcloud(data, num_words_max):
+def wordcloud(data, num_words_max = MAX_WORDS):
     ''' Enregistre les nuages de mots des opinions positives et négatives et retourne les mots vides complétés des mots commun
     '''
 
@@ -137,12 +137,12 @@ def wordcloud(data, num_words_max):
     return wc_positive.stopwords
 
 
-def vectorizer(column):
+def vectorizer(column, stop_words=STOPWORDS):
     '''Retourne l'encodeur entraîné sur les données
     '''
 
     # Appel du constructeur CountVectorizer
-    vectorizer = CountVectorizer(stop_words=STOPWORDS)
+    vectorizer = CountVectorizer(stop_words = stop_words)
 
     # Extraction des commentaires
     # comments_preprocessed = [" ".join(column.iloc[i]) for i in range(len(column))]
